@@ -1,0 +1,95 @@
+{
+  "students": [
+    {
+      "name": "Priya",
+      "course": "Python",
+      "age": 21,
+      "location": "Bangalore",
+      "marks": 92,
+      "isPresent": true,
+      "id": "6GFXhcUSXng"
+    },
+    {
+      "name": "Arjun",
+      "course": "Java",
+      "age": 23,
+      "location": "Chennai",
+      "marks": 76,
+      "isPresent": false,
+      "id": "Yhx1zM_FgVo"
+    },
+    {
+      "name": "Sneha",
+      "course": "MERN",
+      "age": 20,
+      "location": "Hyderabad",
+      "marks": 88,
+      "isPresent": true,
+      "id": "ZFOs-qmQ2-Y"
+    },
+    {
+      "name": "Vikram",
+      "course": "Python",
+      "age": 24,
+      "location": "Pune",
+      "marks": 69,
+      "isPresent": true,
+      "id": "nccHiNZNuQI"
+    },
+    {
+      "name": "Anjali",
+      "course": "Java",
+      "age": 22,
+      "location": "Mumbai",
+      "marks": 95,
+      "isPresent": true,
+      "id": "_rPg2rw6r9M"
+    },
+    {
+      "name": "Kiran",
+      "course": "MERN",
+      "age": 21,
+      "location": "Vijayawada",
+      "marks": 73,
+      "isPresent": false,
+      "id": "Z1oj-OLPpc8"
+    },
+    {
+      "name": "Meena",
+      "course": "Python",
+      "age": 23,
+      "location": "Delhi",
+      "marks": 81,
+      "isPresent": true,
+      "id": "sjb3lC0P_FQ"
+    },
+    {
+      "name": "Rohit",
+      "course": "Java",
+      "age": 25,
+      "location": "Hyderabad",
+      "marks": 64,
+      "isPresent": false,
+      "id": "1aEppiwekhM"
+    },
+    {
+      "name": "Divya",
+      "course": "MERN",
+      "age": 20,
+      "location": "Visakhapatnam",
+      "marks": 90,
+      "isPresent": true,
+      "id": "HHa4u8gnR38"
+    },
+    {
+      "name": "Ganesh",
+      "course": "Python",
+      "age": "25",
+      "location": "Hyd",
+      "marks": "98",
+      "isPresent": "true",
+      "id": "92-8WfhYBkg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
