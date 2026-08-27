@@ -9,7 +9,7 @@ const Home = () => {
 
     async function getData(){
         let res = await axios.get("https://students-7zab.onrender.com/students")
-        setStudent(res.data)
+        setStudent(res.data)  
     }
 
     useEffect(()=>{

@@ -16,7 +16,7 @@ const Edit = () => {
   let {id} = useParams()
 
   async function getStudent(){
-    let res = await axios.get(`http://localhost:3000/students/${id}`)
+    let res = await axios.get(`https://students-7zab.onrender.com/students/${id}`)
     setStd(res.data)
     setName(res.data.name)
     setAge(res.data.age)
@@ -29,7 +29,7 @@ const Edit = () => {
 
   useEffect(()=>{
     getStudent()
-  }, [])
+  }, [id])
 
 
   function handleSubmit(e){
@@ -103,7 +103,7 @@ const Edit = () => {
 
     <div className="mb-3">
       <label className="form-label">Attendance</label>
-      <select value={isPresent}
+      <select value={String(isPresent)}
         onChange={(e)=>setIspresent(e.target.value === `true`)} className="form-select">
         <option >Select Status</option>
         <option value="true">Present</option>
@@ -111,7 +111,7 @@ const Edit = () => {
       </select>
     </div>
 
-    <button type="submit" className="btn btn-primary w-100">Add Student</button>
+    <button type="submit" className="btn btn-primary w-100">Edit Student</button>
   </form>
 </div>
   )
