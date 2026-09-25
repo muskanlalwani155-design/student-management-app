@@ -4,7 +4,12 @@ A responsive Single-Page Application (SPA) built with React and Vite for managin
 
 ---
 
-## Tech Stack
+ **Live Application:** [View Live Vercel App](https://student-management-app-sable.vercel.app)  
+ **Source Code:** [GitHub Repository](https://github.com/muskanlalwani155-design/student-management-app)
+
+---
+
+##  Tech Stack
 
 * **Frontend:** React.js, Vite, CSS3
 * **Routing & State:** React Router DOM, React Hooks (`useState`, `useEffect`)
@@ -14,7 +19,7 @@ A responsive Single-Page Application (SPA) built with React and Vite for managin
 
 ---
 
-## Features
+##  Features
 
 * **Complete CRUD Capabilities:**
   * **Create:** Register new students with details via `AddStudent.jsx`.
