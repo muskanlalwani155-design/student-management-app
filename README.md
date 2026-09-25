@@ -1,13 +1,14 @@
 # Student Management CRUD Application
 
-A responsive Single-Page Application (SPA) built with React and Vite for managing student academic records, featuring full CRUD operations, clean component architecture, and API integration.
+A responsive Single-Page Application (SPA) built with React and Vite for managing student records. The application delivers end-to-end CRUD operations, dynamic routing, shimmer loading states for better UX, and mock REST API synchronization via JSON Server.
 
 ---
 
 ## Tech Stack
 
-* **Frontend:** React.js, Vite, Bootstrap, CSS3
-* **API & Networking:** Axios, RESTful APIs / JSON Server
+* **Frontend:** React.js, Vite, CSS3
+* **Routing & State:** React Router DOM, React Hooks (`useState`, `useEffect`)
+* **API & Backend:** Axios, JSON Server (`db.json`)
 * **Build Tool:** Vite
 * **Deployment:** Vercel
 
@@ -15,10 +16,14 @@ A responsive Single-Page Application (SPA) built with React and Vite for managin
 
 ## Features
 
-* **Full CRUD Operations:** Add new students, view student records in real time, edit details, and delete entries without page reloads.
-* **Client-Side Validation:** Form checks to prevent invalid or empty submissions.
-* **Centralized API Handling:** Configured Axios instance with request and response error handling.
-* **Fast & Responsive UI:** Built using Vite for instant Hot Module Replacement (HMR) and optimized production bundles.
+* **Complete CRUD Capabilities:**
+  * **Create:** Register new students with details via `AddStudent.jsx`.
+  * **Read:** View student listings on `Home.jsx` and detailed individual profiles on `View.jsx`.
+  * **Update:** Edit existing student information through `Edit.jsx`.
+  * **Delete:** Remove student records dynamically without full page refresh.
+* **Enhanced User Experience:** Shimmer loading state on data fetch to prevent layout shifts.
+* **Error Handling:** Dedicated `ErrorPage.jsx` component to gracefully catch invalid routes or broken links.
+* **Component-Driven Architecture:** Modular reusable components like `Student.jsx` for rendering student cards/rows.
 
 ---
 
@@ -28,11 +33,20 @@ A responsive Single-Page Application (SPA) built with React and Vite for managin
 student-management-app/
 ├── public/
 ├── src/
-│   ├── components/      # Navbar, StudentForm, StudentList, StudentItem
-│   ├── services/        # Axios API service configurations
-│   ├── App.jsx          # Main application component & state
-│   ├── main.jsx         # Entry point
-│   └── index.css        # Global layout & custom styling
+│   ├── assets/             # Static icons and assets
+│   ├── Components/
+│   │   └── Student.jsx     # Reusable student card/item component
+│   ├── Pages/
+│   │   ├── AddStudent.jsx  # Form to register a new student
+│   │   ├── Edit.jsx        # Edit existing student records
+│   │   ├── ErrorPage.jsx   # 404 / error boundary view
+│   │   ├── Home.jsx        # Student list view with shimmer loading
+│   │   └── View.jsx        # Detailed individual student view
+│   ├── App.css
+│   ├── App.jsx             # Main routing configuration
+│   ├── index.css           # Global layout & styling
+│   └── main.jsx            # React root mount
+├── db.json                 # Mock backend database (JSON Server)
+├── index.html
 ├── package.json
-├── vite.config.js
-└── README.md
+└── vite.config.js
